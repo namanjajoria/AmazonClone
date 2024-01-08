@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link as ScrollLink } from "react-scroll";
-// import { useState } from "react";
 // eslint-disable-next-line react/prop-types
 const MainNavbar = ({setSearchTerm}) => {
   const cart = useSelector((state) => {

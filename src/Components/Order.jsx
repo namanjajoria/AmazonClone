@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-// import Grid from "@mui/material/Unstable_Grid2";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {  Button, Container, Typography } from "@mui/material";
@@ -7,12 +6,6 @@ const Order = () => {
   const location = useLocation();
   const [orders, setOrders] = useState([]);
   const navigate = useNavigate();
-  // const Item = styled(Paper)(({ theme }) => ({
-  //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  //   ...theme.typography.body2,
-  //   borderRadius: "10px",
-  //   padding: "30px 30px 10px 0px",
-  // }));
 
   useEffect(() => {
     if (location.state && location.state.orders) {
