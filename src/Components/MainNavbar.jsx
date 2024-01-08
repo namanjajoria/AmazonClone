@@ -8,6 +8,7 @@ import Badge from "@mui/material/Badge";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link as ScrollLink } from "react-scroll";
 // import { useState } from "react";
 // eslint-disable-next-line react/prop-types
 const MainNavbar = ({setSearchTerm}) => {
@@ -37,7 +38,15 @@ const MainNavbar = ({setSearchTerm}) => {
             navbarScroll
           >
             <Link to={'/'} className=" fs-5 me-4 list navitem">Home</Link>
-            <Link className="me-4 fs-5 list navitem">Products</Link>
+            <ScrollLink
+              to="productsSection"  // This should match the target element's ID
+              smooth={false}
+              duration={500}
+              className="me-4 fs-5 list navitem"
+              style={{cursor:"pointer"}}
+            >
+              Products
+            </ScrollLink>
             
           </Nav>
           <Form className="d-flex ms-auto me-auto navitem">

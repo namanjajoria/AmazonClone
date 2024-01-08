@@ -6,7 +6,9 @@ const Home = ({searchTerm}) => {
   return (
     <div>
       <Slider/>
-      <Products searchTerm={searchTerm}/>
+      <div id="productsSection">
+        <Products searchTerm={searchTerm} />
+      </div>
     </div>
   )
 }
